@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">CADASTRO DO USUÁRIO UNIJORGE</h1>
+    </header><br>
+    
+    <nav>
+        <label for="data">Data de Preenchimento:</label>
+        <input type="date" name="data" id="data">
+    </nav>
+
+    <section>
+    <h2 class="titulos">1 - IDENTIFICAÇÃO</h2>
+    <form action="" method="get">
+        <fieldset>
+         <legend class="subtitulos">Dados Pessoais</legend>
+         <label for="nome">Nome:</label>
+         <input type="text" name="nome" id="nome" size="50" required>
+         <label for="cpf">CPF:</label>
+         <input type="text" name="cpf" id="cpf" placeholder="Digite apenas números" pattern="\d{3}\d{3}\d{3}\d{2}" maxlength="11" inputmode="numeric" size="17" required>
+         <label for="rg">RG:</label>
+         <input type="text" name="rg" id="rg" placeholder="Digite apenas números" pattern="\d{2}\d{3}\d{3}\{d2}" maxlength="10" inputmode="numeric" size="17" required>
+         <br><br>
+
+         <label for="nascimento">Data de Nascimento:</label>
+         <input type="date" name="nascimento" id="nascimento" required>
+         <label for="idade">Idade:</label>
+         <input type="text" name="idade" id="idade" pattern="0-150" size="3" maxlength="3" inputmode="numeric" required>
+         <label for="gênero">Gênero:</label>
+         <select name="gênero" id="gênero" required>
+            <option value="">Selecione uma Opção</option>
+            <option value="Masc">Masculino</option>
+            <option value="Fem">Feminino</option>
+            <option value="out">Outro</option>
+            <option value="n/a">Prefiro não Informar</option>
+         </select>
+         <label for="genero_outro">Se selecionou "Outro", especifique:</label>
+         <input type="text" id="genero_outro" name="genero_outro">
+        </fieldset><br>
+
+    
+        <fieldset>
+         <legend class="subtitulos">Localização e Contato</legend>
+         <label for="endereço">Endereço:</label>
+         <input type="text" name="endereço" id="endereço">
+         <label for="n.">N°:</label>
+         <input type="text" name="n." id="n.">
+         <label for="bairro">Bairro:</label>
+         <input type="text" name="bairro" id="bairro"><br><br>
+         
+         <label for="cep">CEP:</label>
+         <input type="text" name="cep" id="cep">
+         <label for="telefone">Telefone:</label>
+         <input type="tel" name="telefone" id="telefone">
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email">
+        </fieldset><br>
+
+        <fieldset>
+         <legend class="subtitulos">Dados Adicionais</legend>
+         <label for="profissão">Profissão:</label>
+         <input type="text" name="profissão" id="profissão">
+         <label for="naturalidade">Naturalidade:</label>
+         <input type="text" name="naturalidade" id="naturalidade"><br><br>
+         <label for="est_civil">Estado Civil:</label>
+         <input type="text" name="est_civil" id="est_civil">
+         <label for="religião">Religião:</label>
+         <input type="text" name="religião" id="religião"><br><br>
+
+         <label for="escolaridade">Escolaridade:</label>
+         <input type="text" name="escolaridade" id="escolaridade">
+         <label for=>Aluno UniJorge?</label>
+         <input type="radio" name="aluno_uj" id="aluno_ujS">
+         <label for="aluno_ujS">Sim</label>
+         <input type="radio" name="aluno_uj" id="aluno_ujN">
+         <label for="aluno_ujN">Não</label><br><br>
+   
+         <label for="curso">Curso:</label>
+         <input type="text" name="" id="">
+         <label for="semestre">Semestre:</label>
+         <input type="number" name="semestre" id="semestre">
+         <label for=>Turno:</label>
+         <input type="radio" name="turno" id="matutino">
+         <label for="matutino">Matutino</label>
+         <input type="radio" name="turno" id="vespertino">
+         <label for="vespertino">Vespertino</label>
+         <input type="radio" name="turno" id="noturno">
+         <label for="noturno">Noturno</label><br>
+       
+        </fieldset><br>
+
+
+
+    <h2 class="titulos">2 - DADOS SOBRE A FAMÍLIA</h2>
+        <fieldset> <legend class="subtitulos">Dados Principais</legend>
+         <label for="nome_pai">Nome do Pai:</label>
+         <input type="text" name="nome_pai" id="nome_pai" size="50">
+         <label for="idade_pai">Idade:</label>
+         <input type="text" name="idade_pai" id="idade_pai" pattern="0-150" size="3" maxlength="3" inputmode="numeric" required>
+         <label for="profissão_pai">Profissão:</label>
+         <input type="text" name="profissão_pai" id="profissão_pai" size="40">
+         <br><br><label for="escolaridade_pai">Escolaridade:</label>
+         <input type="text" name="escolaridade_pai" id="escolaridade_pai"><br><br>
+
+         <label for="nome_mae">Nome da Mãe:</label>
+         <input type="text" name="nome_mae" id="nome_mae" size="50">
+         <label for="idade_mae">Idade:</label>
+         <input type="text" name="idade_mae" id="idade_mae" pattern="0-150" size="3" maxlength="3" inputmode="numeric" required>
+         <label for="profissão_mae">Profissão:</label>
+         <input type="text" name="profissão_mae" id="profissão_mae" size="40">
+         <br><br><label for="escolaridade_mae">Escolaridade:</label>
+         <input type="text" name="escolaridade_mae" id="escolaridade_mae"><br><br>
+
+         <label for="">Renda Familiar:</label>
+         <label for="ate_2_salariosm">Até 2 Salários Mínimos</label>
+         <input type="radio" name="salario" id="ate_2_salariosm">
+         <label for="mais_2_salariosm">Mais que 2 Salários Mínimos</label>
+         <input type="radio" name="salario" id="mais_2_salariosm">
+        </fieldset><br>
+        </section>
+        
+         <label for="responsável_triagem">Responsável pela Triagem:</label>
+         <input type="text" name="responsável_triagem" id="responsável_triagem"><br><br>
+
+         <label for="senha">Crie uma nova senha:</label>
+         <input type="password" name="senha" id="senha" maxlength="15" minlength="8"><br><br>
+
+         <label for="ENVIAR"></label>
+         <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
